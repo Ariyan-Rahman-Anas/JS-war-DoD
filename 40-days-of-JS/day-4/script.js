@@ -54,8 +54,67 @@ let personAge = 100
 
 if (personAge < 18) {
     console.log(`Your ticket price is: $${ticketPriceForChildren}`)
-} else if (personAge >= 18 && personAge <= 60) {
+} else if (personAge <= 60) {
     console.log(`Your ticket price is: $${ticketPriceForAdult}`)
 } else {
     console.log(`Your ticket price is: $${ticketPriceForSenior}`)
+}
+
+
+// Question-5= Horoscope Sign Checker
+let month = "April";
+
+switch (month) {
+  case "March":
+    console.log("Aries");
+    break;
+  case "April":
+    console.log("Taurus");
+    break;
+  case "May":
+    console.log("Gemini");
+    break;
+  case "June":
+    console.log("Cancer");
+    break;
+  case "July":
+    console.log("Leo");
+    break;
+  case "August":
+    console.log("Virgo");
+    break;
+  case "September":
+    console.log("Libra");
+    break;
+  case "October":
+    console.log("Scorpio");
+    break;
+  case "November":
+    console.log("Sagittarius");
+    break;
+  case "December":
+    console.log("Capricorn");
+    break;
+  case "January":
+    console.log("Aquarius");
+    break;
+  case "February":
+    console.log("Pisces");
+    break;
+  default:
+    console.log("Invalid month");
+}
+
+
+// Question-6= Which Triangle?
+let a = 5;
+let b = 50;
+let c = 500; 
+
+if (a === b && b === c) {
+  console.log("Equilateral Triangle");
+} else if (a === b || b === c || a === c) {
+  console.log("Isosceles Triangle");
+} else {
+  console.log("Scalene Triangle");
 }
